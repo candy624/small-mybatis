@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by candy on 2023/5/16.
@@ -13,7 +12,7 @@ public class MapperProxy<T> implements InvocationHandler, Serializable {
 
     private static final long serialVersionUID = 4801707023180239945L;
 
-    private Map<String,String> sqlSession;
+    private final Map<String,String> sqlSession;
     private final Class<T> mapperInterface;
 
     public MapperProxy(Map<String, String> sqlSession,Class<T> mapperInterface) {

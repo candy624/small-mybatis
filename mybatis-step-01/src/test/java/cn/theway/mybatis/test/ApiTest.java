@@ -11,9 +11,9 @@ import java.util.Map;
 /**
  * Created by candy on 2023/5/16.
  */
-public class Test {
+public class ApiTest {
 
-    private final Logger log = LoggerFactory.getLogger(Test.class);
+    private final Logger log = LoggerFactory.getLogger(ApiTest.class);
 
     @org.junit.Test
     public void test_MapperProxyFactory() {
